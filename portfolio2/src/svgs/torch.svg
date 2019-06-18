@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="layer1">
+    <path
+       id="path10"
+       d="M 96.00595,104.98809 46.869048,239.54762 69.547617,253.91071 146.65476,132.20238 Z"
+       style="fill:#999999;stroke:#999999;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path12"
+       d="m 83.15476,129.93452 -5.291667,15.875 47.624997,26.45833 8.31548,-11.33928 z"
+       style="fill:#666666;stroke:#666666;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+  <g
+     style="display:inline"
+     id="layer2">
+    <path
+       id="path21"
+       d="m 99.02976,91.380952 -6.80357,-19.654763 18.14286,-29.482142 4.53571,31.749999 -0.75595,21.922621 z"
+       style="fill:#ff6600;stroke:#ff6600;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path23"
+       d="m 120.95238,68.70238 -3.02381,-33.261903 11.33929,-16.630953 6.04761,15.874998 21.16667,-25.7023794 -2.26786,40.0654764 z"
+       style="fill:#ff9955;stroke:#ff9955;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path25"
+       d="M 120.95238,97.42857 V 74.75 L 141.36309,64.166667 142.11905,90.625 Z"
+       style="fill:#d45500;stroke:#d45500;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path27"
+       d="M 145.14286,92.136903 127,102.72024 148.16666,113.30357 164.79762,96.672618 158.75,58.119046 146.65476,58.875001 Z"
+       style="fill:#d45500;stroke:#d45500;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path29"
+       d="m 159.50595,48.291667 3.77976,-34.77381 13.60715,-5.2916665 -1.51191,18.1428565 21.92262,-9.827381 -15.875,32.505953 -2.26786,40.821427 -4.53571,6.047621 z"
+       style="fill:#ff9955;stroke:#ff9955;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       id="path33"
+       d="m 167.06547,102.72024 -15.11904,13.60714 39.30952,-15.875 -9.07143,-8.315477 z"
+       style="fill:#ff7f2a;stroke:#ff7f2a;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+  <g
+     id="layer3">
+    <text
+       id="text3813"
+       y="283.13312"
+       x="46.471016"
+       style="font-style:normal;font-weight:normal;font-size:30.14106941px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75352675"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.75352675;-inkscape-font-specification:'Palatino Linotype Bold';font-family:'Palatino Linotype';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;stroke:#ffffff;fill:#ffffff"
+         y="283.13312"
+         x="46.471016"
+         id="tspan3811">Loading</tspan></text>
+  </g>
+</svg>

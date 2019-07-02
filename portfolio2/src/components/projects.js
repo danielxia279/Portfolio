@@ -11,12 +11,11 @@ function Projects(){
             <div className={css(styles.content)}>
                 <a className={css(styles.projectLink)} href="https://github.com/Dancharr/Portfolio" target="_blank">Portfolio</a>
                 <div className={css(styles.description)}>
-                    My entry in the battle against Raymo111, the Archangel.
+                    This simple static react app.
                 </div>
                 <a className={css(styles.projectLink)} href="https://github.com/Dancharr/Aaron-and-Daniel-9D-Bomberman" target="_blank">BomberPerson</a>
                 <div className={css(styles.description)}>
                     Java remake of the first Super Bomberman.
-                    Created in collaboration with my metallic friend, Ronald Tao.
                 </div>
                 <a className={css(styles.projectLink)} href="https://github.com/Dancharr/idle-app" target="_blank">World of Irucraft</a>
                 <div className={css(styles.description)}>

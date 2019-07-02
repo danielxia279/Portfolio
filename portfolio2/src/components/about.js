@@ -3,7 +3,7 @@ import React, { Component, useState, useRef, useEffect } from 'react';
 import { StyleSheet, css } from 'aphrodite'
 import { Parallax } from 'react-scroll-parallax';
 
-import Resume from './takema.pdf'
+import Resume from './resume.pdf'
 
 function About(){
 

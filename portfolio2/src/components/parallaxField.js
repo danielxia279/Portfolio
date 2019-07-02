@@ -32,7 +32,15 @@ function ParallaxField(props) {
         {depth: 2, left:'30%', top:'28%'},
         {depth: 2, left:'76%', top:'32%'},
         {depth: 1, left:'34%', top:'38%'},
-
+        {depth: 3, left:'17%', top:'45%'},
+        {depth: 2, left:'67%', top:'51%'},
+        {depth: 1, left:'73%', top:'56%'},
+        {depth: 1, left:'40%', top:'62%'},
+        {depth: 2, left:'12%', top:'65%'},
+        {depth: 1, left:'67%', top:'73%'},
+        {depth: 4, left:'38%', top:'84%'},
+        {depth: 2, left:'94%', top:'86%'},
+        {depth: 3, left:'48%', top:'91%'},
     ]
 
     return (
@@ -95,6 +103,15 @@ function ParallaxField(props) {
             <Waterdrop {...waterdrops[5]}/>
             <Waterdrop {...waterdrops[6]}/>
             <Waterdrop {...waterdrops[7]}/>
+            <Waterdrop {...waterdrops[8]}/>
+            <Waterdrop {...waterdrops[9]}/>
+            <Waterdrop {...waterdrops[10]}/>
+            <Waterdrop {...waterdrops[11]}/>
+            <Waterdrop {...waterdrops[12]}/>
+            <Waterdrop {...waterdrops[13]}/>
+            <Waterdrop {...waterdrops[14]}/>
+            <Waterdrop {...waterdrops[15]}/>
+            <Waterdrop {...waterdrops[16]}/>
         </div>
   );
 }

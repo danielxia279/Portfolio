@@ -30,16 +30,18 @@ function Contact(){
             setEmail('');
             setMessage('');
             setCell('');
+            setButtonText('Send');
         }
 
-        axios.post('API_URI', data)
-        .then(res => {
-            setSent(true);
-            resetForm();
-        })
-        .catch(() => {
-            console.log('Message not sent');
-        })
+        // axios.post('API_URI', data)
+        // .then(res => {
+        //     setSent(true);
+        //     resetForm();
+        // })
+        // .catch(() => {
+        //     console.log('Message not sent');
+        // })
+        setTimeout(() => resetForm(), 500);
 
     }
 
@@ -54,7 +56,7 @@ function Contact(){
                 Tel: (647)-909-9338
             </div>
         </div>
-        <form onSubmit={(e) => this.formSubmit(e)}>
+        <form onSubmit={(e) => formSubmit(e)}>
 
             <input type="text" value={name} onInput={e => {setName(e.target.value)}} placeholder="Name" className={css(styles.textInput)}/>
             <input type="tel" value={cell} onInput={e => {setCell(e.target.value)}} placeholder="Phone Number" className={css(styles.textInput)}/>

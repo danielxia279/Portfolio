@@ -16,40 +16,35 @@ app.listen(port, () => {
   console.log('We are live on port 4444');
 });
 
-
-app.get('/', (req, res) => {
-  res.send('Welcome to my api');
-})
-
-app.post('/api/v1', (req,res) => {
+app.post('/', (req,res) => {
   var data = req.body;
 
-var smtpTransport = nodemailer.createTransport({
-  service: 'Gmail',
-  port: 465,
-  auth: {
-    user: 'USERNAME',
-    pass: 'PASSWORD'
-  }
-});
+  var smtpTransport = nodemailer.createTransport({
+    service: 'Gmail',
+    port: 465,
+    auth: {
+      user: 'captchafailingrobotjuice@gmail.com',
+      pass: 'robot456123'
+    }
+  });
 
-var mailOptions = {
-  from: data.dataEmail,
-  to: 'ENTER_YOUR_EMAIL',
-  subject: 'ENTER_YOUR_SUBJECT',
-  html: `<p>${data.dataName}</p>
-          <p>${data.dataEmail}</p>
-          <p>${data.dataMessage}</p>`
-};
+  var mailOptions = {
+    from: data.dataEmail,
+    to: 'captchafailingrobotjuice@gmail.com',
+    subject: 'ENTER_YOUR_SUBJECT',
+    html: `<p>${data.dataName}</p>
+            <p>${data.dataEmail}</p>
+            <p>${data.dataMessage}</p>`
+  };
 
-smtpTransport.sendMail(mailOptions,
-(error, response) => {
-  if(error) {
-    res.send(error)
-  }else {
-    res.send('Success')
-  }
-  smtpTransport.close();
-});
+  smtpTransport.sendMail(mailOptions,
+  (error, response) => {
+    if(error) {
+      res.send(error)
+    }else {
+      res.send('Success')
+    }
+    smtpTransport.close();
+  });
 
 })

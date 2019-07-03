@@ -1,4 +1,7 @@
 var plugins = [{
+      plugin: require('C:/Users/danie/portfolio/portfolio2/node_modules/gatsby-plugin-aphrodite/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('C:/Users/danie/portfolio/portfolio2/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{

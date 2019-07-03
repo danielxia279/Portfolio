@@ -21,7 +21,7 @@ function About(){
                 <br/>
                 Currently in Toronto, Canada
                 <br/>
-                <a class="link" className={css(styles.resumeLink)} href={Resume} target="_blank">Check Out My Resume (PDF)</a>
+                <a className={css(styles.resumeLink)} href={Resume} target="_blank">Check Out My Resume (PDF)</a>
 
             </div>
             
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     resumeLink: {
         width: '100%',
         userSelect: 'none',
-        curser: 'pointer',
+        cursor: 'pointer',
         fontSize: '2rem',
         background: '#191919',
         borderColor: '#4067a5',

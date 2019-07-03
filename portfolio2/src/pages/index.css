@@ -11,3 +11,72 @@ body {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.svg{
+    width: 10vw;
+}
+.loading-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f3d54;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 9999;
+}
+.loading-page2{
+    background: #172233;
+}
+.loading-page3{
+    background: black;
+}
+.slide-out{
+    animation: slide-out 1s
+}
+.slide-out-longer{
+    animation: slide-out-longer 1s
+}
+.slide-out-longerer{
+    animation: slide-out-longerer 1s
+}
+@keyframes slide-out{
+    0%{
+        transform: translateY(0%);
+    }   
+    100%{
+        transform: translateY(-100%);
+    } 
+
+}
+@keyframes slide-out-longer{
+    0%{
+        transform: translateY(0%);
+    } 
+    30%{
+        transform: translateY(0%);
+    }  
+    100%{
+        transform: translateY(-100%);
+    } 
+
+}
+@keyframes slide-out-longerer{
+    0%{
+        transform: translateY(0%);
+    } 
+    60%{
+        transform: translateY(0%);
+    }  
+    100%{
+        transform: translateY(-100%);
+    } 
+
+}
+

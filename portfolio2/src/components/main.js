@@ -16,7 +16,6 @@ import Navbar from './navbar'
 import Contactbar from './contactbar'
 import ParallaxField from './parallaxField'
 import RowLines from './rowLines'
-import Qurans from './qurans'
 
 function Main(){
   

@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-const port = 4444;
+const port = 5000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,14 +13,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.listen(port, () => {
-  console.log('We are live on port 4444');
+  console.log('We are live on port 5000');
 });
 
-app.post('/', (req,res) => {
+app.post('/send', (req,res) => {
   var data = req.body;
 
   var smtpTransport = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
     port: 465,
     auth: {
       user: 'captchafailingrobotjuice@gmail.com',
@@ -31,9 +31,10 @@ app.post('/', (req,res) => {
   var mailOptions = {
     from: data.dataEmail,
     to: 'captchafailingrobotjuice@gmail.com',
-    subject: 'ENTER_YOUR_SUBJECT',
+    subject: 'Portfolio Contact',
     html: `<p>${data.dataName}</p>
             <p>${data.dataEmail}</p>
+            <p>${data.dataCell}</p>
             <p>${data.dataMessage}</p>`
   };
 

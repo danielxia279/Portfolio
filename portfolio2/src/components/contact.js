@@ -33,15 +33,15 @@ function Contact(){
             setButtonText('Send');
         }
 
-        // axios.post('API_URI', data)
-        // .then(res => {
-        //     setSent(true);
-        //     resetForm();
-        // })
-        // .catch(() => {
-        //     console.log('Message not sent');
-        // })
-        setTimeout(() => resetForm(), 500);
+         axios.post('http://localhost:5000/send', data)
+         .then(res => {
+             setSent(true);
+             resetForm();
+             console.log(res);
+        })
+        .catch(() => {
+            console.log('Message not sent');
+        })
 
     }
 

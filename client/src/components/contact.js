@@ -33,7 +33,7 @@ function Contact(){
             setButtonText('Send');
         }
 
-         axios.post('http://danielxia:5000/send', data)
+         axios.post('https://danielxia:5000/send', data)
          .then(res => {
              setSent(true);
              resetForm();

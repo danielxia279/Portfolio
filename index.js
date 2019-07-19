@@ -7,7 +7,7 @@ const app = express();
 
 const port = 5000;
 
-require('dotenv').config();
+require('dotenv').config({ path:__dirname+'/./../.env' });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,14 +25,14 @@ app.post('/send', (req,res) => {
     service: 'gmail',
     port: 465,
     auth: {
-      user: process.env.USER,
-      pass: process.env.PASS,
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
     }
   });
 
   var mailOptions = {
     from: data.dataEmail,
-    to: 'captchafailingrobotjuice@gmail.com',
+    to: 'daniel.xia.279@gmail.com',
     subject: 'Portfolio Contact',
     html: `<p>${data.dataName}</p>
             <p>${data.dataEmail}</p>

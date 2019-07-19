@@ -33,7 +33,7 @@ function Contact(){
             setButtonText('Send');
         }
 
-         axios.post('http://localhost:5000/send', data)
+         axios.post('http://danielxia:5000/send', data)
          .then(res => {
              setSent(true);
              resetForm();
@@ -51,7 +51,7 @@ function Contact(){
         <div className={css(styles.text)}>
             <div className={css(styles.chat)}>Let's Chat</div>
             <div className={css(styles.info)}>
-                Email: Daniel.xia.279@gmail.com
+                Email: daniel.xia.279@gmail.com
                 <br/>
                 Tel: (647)-909-9338
             </div>

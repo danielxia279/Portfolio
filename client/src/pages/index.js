@@ -14,6 +14,7 @@ const IndexPage = () => (
   <ParallaxProvider className={css(styles.mainContainer)}>
     <Helmet>
       <link href="https://fonts.googleapis.com/css?family=B612+Mono|Poppins&display=swap" rel="stylesheet"/>
+      <title>Daniel Xia | Welcome!</title>
     </Helmet>
     <div class="loading-page loading-page3" id="loading-page3"></div>
     <div class="loading-page loading-page2" id="loading-page2"></div>

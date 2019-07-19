@@ -1,4 +1,5 @@
 import React, { Component,useState } from 'react';
+import Fade from 'react-reveal/Fade';
 
 import { StyleSheet, css } from 'aphrodite'
 
@@ -10,13 +11,17 @@ function Contact(){
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [cell, setCell] = useState('');
-    const [sent, setSent] = useState(false);
-    const [buttonText, setButtonText] = useState('Send')
+    const [clicked, setClicked] = useState(false);
+    const [confirm, setConfirm] = useState('');
+    const [sent, setSent] = useState('');
+    const [buttonText, setButtonText] = useState('Send');
 
     const formSubmit = (e) => {
         e.preventDefault();
 
         setButtonText('...sending');
+        setClicked(false);
+        
 
         let data = {
             dataName: name,
@@ -35,11 +40,16 @@ function Contact(){
 
          axios.post('/send', data)
          .then(res => {
-             setSent(true);
-             resetForm();
-             console.log(res);
+            setClicked(true);
+            setSent('blue');
+            setConfirm('Message Sent');
+            resetForm();
+            console.log(res);
         })
         .catch(() => {
+            setClicked(true);
+            setSent('red');
+            setConfirm('Error Sending Message');
             console.log('Message not sent');
         })
 
@@ -62,8 +72,12 @@ function Contact(){
             <input type="tel" value={cell} onInput={e => {setCell(e.target.value)}} placeholder="Phone Number" className={css(styles.textInput)}/>
             <input type="email" value={email} onInput={e => {setEmail(e.target.value)}} placeholder="Email" className={css(styles.textInput)}/>
             <textarea  value={message} onInput={e => {setMessage(e.target.value)}} placeholder="Write something.." className={css(styles.textInput, styles.message)}></textarea>
+    
+            <div>
+                <button type="submit" className={css(styles.submit)}>{buttonText}</button>
+                {clicked? <span className={css(styles.confirm, styles[sent])}><Fade bottom>{confirm}</Fade></span> : <span></span>}
+            </div>
             
-            <button type="submit" className={css(styles.submit)}>{buttonText}</button>
         </form>
         </div>
     )
@@ -125,12 +139,25 @@ const styles = StyleSheet.create({
         marginTop: '5px',
         color: 'white',
         cursor: 'pointer',
+        marginRight: '1rem',
         transition: 'background 0.5s, color 0.5s',
         ':hover': {
             background: '#e5f2fc',
             color: '#044489',
-        } 
-    }
+        } ,
+        
+    },
+    confirm: {
+        float: 'right',
+        paddingLeft: '5rem',
+        fontFamily: [B612],
+    },
+    red: {
+        color: '#b32819'
+    },
+    blue: {
+        color: '#73c1f4',
+    },
 
 
 })

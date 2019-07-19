@@ -12,7 +12,7 @@ function About(){
             
                 About
             <div className={css(styles.content)}>
-                I am a senior student at Markville Secondary School and
+                I am a freshman at the University of Toronto and
                 an aspiring full-stack web developer.
                 <br/>
                 While my love for software is rooted in its mathematics

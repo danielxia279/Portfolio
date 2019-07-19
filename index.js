@@ -7,6 +7,8 @@ const app = express();
 
 const port = 5000;
 
+require('dotenv').config();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -23,8 +25,8 @@ app.post('/send', (req,res) => {
     service: 'gmail',
     port: 465,
     auth: {
-      user: 'captchafailingrobotjuice@gmail.com',
-      pass: 'robot456123'
+      user: process.env.USER,
+      pass: process.env.PASS,
     }
   });
 
